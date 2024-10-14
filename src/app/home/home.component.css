@@ -1,0 +1,57 @@
+.home-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #f4f4f4; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto; /* Center the container */
+}
+
+h1 {
+  color: #2c3e50; /* Dark blue for headings */
+  margin-bottom: 20px;
+}
+
+p {
+  color: #34495e; /* Darker gray for text */
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.feature-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.feature {
+  background-color: #ffffff; /* White background for features */
+  border: 1px solid #dcdcdc; /* Light border */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 30%; /* Responsive width for features */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.cta-button {
+  background-color: #2980b9; /* Blue button */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+}

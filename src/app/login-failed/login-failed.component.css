@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Light gray background */
+  color: #333; /* Dark text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff; /* White background for the container */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Limit the width of the container */
+  margin: 20px; /* Add some margin */
+}
+
+h1 {
+  color: #e74c3c; /* Red color for the heading */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 30px; /* Space below the paragraph */
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9; /* Blue button */
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+}

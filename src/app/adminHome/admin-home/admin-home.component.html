@@ -1,0 +1,33 @@
+<div class="admin-container">
+  <h2>Input Journey Points</h2>
+  <form (ngSubmit)="setDirection()" #journeyForm="ngForm">
+    <div class="form-group">
+      <label for="startingPoint">Starting Point:</label>
+      <input type="text" id="startingPoint" [(ngModel)]="origin" name="startingPoint" required>
+    </div>
+
+    <div class="form-group">
+      <label for="finalPoint">Final Point:</label>
+      <input type="text" id="finalPoint" [(ngModel)]="destination" name="finalPoint" required>
+    </div>
+
+    <button type="submit" class="submit-button" [disabled]="!journeyForm.valid || loading">Submit</button>
+  </form>
+
+  <div *ngIf="loading">Loading directions...</div>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <div *ngIf="mapLoaded">
+    <google-map
+      height="400px"
+      width="750px"
+      [center]="mapCenter"
+      [zoom]="zoom">
+      <!-- Only render the directions renderer if directions$ is not null -->
+      <map-directions-renderer *ngIf="(directions$ | async) as directions" [directions]="directions"></map-directions-renderer>
+    </google-map>
+  </div>
+
+  <div>Latitude: {{display?.lat}}</div>
+  <div>Longitude: {{display?.lng}}</div>
+</div>

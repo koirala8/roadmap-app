@@ -1,0 +1,78 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Add a default font */
+  background-color: #f4f4f4; /* Light gray background for contrast */
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto; /* Center the container */
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #2980b9; /* Blue heading */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #34495e; /* Darker gray for labels */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Full width */
+  padding: 10px;
+  border: 1px solid #dcdcdc; /* Light border */
+  border-radius: 5px;
+  font-size: 1rem; /* Use rem for better scalability */
+  transition: border-color 0.3s; /* Add transition for focus effect */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #2980b9; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.radio-group input {
+  margin-right: 5px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2980b9; /* Blue button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+}
